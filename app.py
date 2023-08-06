@@ -53,7 +53,7 @@ if upload_file is not None:
         custom_height = 350
         user_img = needed_function.image_name(selected_user)
         image = Image.open(user_img)
-        # Resize the image to a specific height while maintaining the aspect ratio
+        # ----------------------Resize the image to a specific height while maintaining the aspect ratio---------------
         aspect_ratio = image.width / image.height
         custom_width = int(custom_height * aspect_ratio)
         resized_image = image.resize((custom_width, custom_height))
@@ -119,7 +119,7 @@ if upload_file is not None:
                 st.dataframe(top_user_pct)
 
         st.divider()
-        # world cloud for most common words
+        # -----------------------world cloud for most common words-----------------
         st.title('Most use words show Bigger in Size')
         df_wc = needed_function.create_wordcloud(selected_user, df)
 
@@ -133,7 +133,7 @@ if upload_file is not None:
             st.pyplot(fig, use_container_width=True)
 
         st.divider()
-        # bar plot for most common words
+        # ----------------bar plot for most common words--------------
         st.title('Most Common Words Uses by {}'.format(selected_user))
         most_common_word = needed_function.most_common_words(selected_user, df)
 
@@ -145,7 +145,7 @@ if upload_file is not None:
         )
         st.plotly_chart(fig, use_container_width=True)
 
-        # emoji
+        # --------------emoji-----------------------
         em_df = needed_function.find_emoji(selected_user, df)
         if em_df.empty:
             st.title(f'NO Emoji Sent by the {selected_user}')
