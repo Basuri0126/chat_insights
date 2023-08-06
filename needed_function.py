@@ -101,7 +101,7 @@ def find_emoji(selected_user, df):
     Emoji = []
     for msg in df['message']:
         if isinstance(msg, str):
-            Emoji.extend([em for em in msg if em in emoji.UNICODE_EMOJI_ALIAS_ENGLISH])
+            Emoji.extend([em for em in msg if em in emoji.EMOJI_DATA])
 
     if len(Emoji) == 0:
         return pd.DataFrame(columns=['emoji', 'count'])
