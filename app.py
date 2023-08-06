@@ -18,7 +18,7 @@ def initialize_session():
 
 
 def main():
-    st.set_page_config(layout='wide', page_title='Chat', page_icon='students.png')
+    st.set_page_config(layout='wide', page_title='Chat', page_icon='img/students.png')
     initialize_session()
     st.title('CVS 2019-22 Whatsapp Chat Official Or Non official')
     st.markdown("#### Please wait after selecting any Option Because it takes time to Analyze `\U0001F64F`")
