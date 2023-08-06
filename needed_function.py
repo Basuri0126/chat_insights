@@ -48,8 +48,6 @@ def fetch_top_chatter(df):
 
 
 def create_wordcloud(selected_user, df):
-    if selected_user == 'Deepak Cs':
-        return None
     if selected_user != 'Overall Group':
         df = df[df['users'] == selected_user]
 

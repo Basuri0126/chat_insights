@@ -65,8 +65,6 @@ def preprocessor(data):
     df['users'].replace('+91 99991 92276', 'Nitin Vinod Tanwar', inplace=True)
     df['users'].replace('mehak kataria', 'Mehak Kataria', inplace=True)
 
-
-
     df.drop(7616, inplace=True)
 
     df['year'] = df['date'].dt.year
@@ -80,7 +78,6 @@ def preprocessor(data):
     df['message_count'] = df.groupby(['month_day', 'users'])['message'].transform('count')
     df['data_info'] = df['year'].astype(str) + '-' + df['month_num'].astype(str)
 
-
     period = []
     for hour in df[['day', 'hour']]['hour']:
         if hour == 23:
@@ -93,4 +90,3 @@ def preprocessor(data):
     df['period'] = period
 
     return df
-
