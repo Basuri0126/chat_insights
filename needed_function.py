@@ -162,7 +162,7 @@ def image_name(selected_user):
         'Sagar Adhikari(badwa)': 'img/Sagar Adhikari.PNG',
         'Divya Pandey': 'img/Divya Pandey.jpeg',
         'Harsh kumar': 'img/Harsh Kumar.PNG',
-        'Ravi Anand': 'img/Ravi Anand.jpg',
+        'Ravi Anand': 'img/Ravi Anand.jpeg',
         'Kunal(NCC)': 'img/Kunal(NCC).PNG',
         'Harsh Jain': 'img/Harsh Jain.PNG',
         'mohiniyadav': 'img/Mohini Yadav.jpeg',
