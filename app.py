@@ -8,7 +8,7 @@ import seaborn as sns
 import plotly.express as px
 
 
-st.set_page_config(layout='wide', page_title='Chat', page_icon='students.png')
+
 
 
 def initialize_session():
@@ -18,6 +18,7 @@ def initialize_session():
 
 
 def main():
+    st.set_page_config(layout='wide', page_title='Chat', page_icon='students.png')
     initialize_session()
     st.title('CVS 2019-22 Whatsapp Chat Official Or Non official')
     st.markdown("#### Please wait after selecting any Option Because it takes time to Analyze `\U0001F64F`")
