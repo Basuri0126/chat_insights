@@ -8,9 +8,6 @@ import seaborn as sns
 import plotly.express as px
 
 
-
-
-
 def initialize_session():
     if 'initialized' not in st.session_state:
         st.session_state.initialized = True
@@ -20,7 +17,7 @@ def initialize_session():
 def main():
     st.set_page_config(layout='wide', page_title='Chat', page_icon='img/students.png')
     initialize_session()
-    st.title('CVS 2019-22 Whatsapp Chat Official Or Non official')
+    st.title('CVS 2019-22 Whatsapp Chat Official')
     st.markdown("#### Please wait after selecting any Option Because it takes time to Analyze `\U0001F64F`")
     st.markdown('<p style="font-size: 24px; color: blue;">Thank You 😃 😍</p>', unsafe_allow_html=True)
     st.sidebar.markdown("""
@@ -29,21 +26,7 @@ def main():
     """, unsafe_allow_html=True)
 
     # --------file handling-------
-    with open('WhatsApp Chat with CVSComputeScience 2019.txt', 'r', encoding='utf-8') as file1:
-        content1 = file1.read()
-
-    # Read the contents of the second file
-    with open('WhatsApp Chat with Mini Militians.txt', 'r', encoding='utf-8') as file2:
-        content2 = file2.read()
-
-    # Combine the contents of both files
-    combined_content = content1 + '\n' + content2
-
-    # Write the combined content to a new file
-    with open('combine.txt', 'w', encoding='utf-8') as output_file:
-        output_file.write(combined_content)
-
-    f = open('combine.txt', 'r', encoding='utf-8')
+    f = open('WhatsApp Chat with CVSComputeScience 2019.txt', 'r', encoding='utf-8')
     data = f.read()
 
     upload_file = data
