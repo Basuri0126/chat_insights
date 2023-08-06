@@ -82,7 +82,7 @@ def main():
 
                 # fig, ax = plt.subplots(figsize=(11, 7.5))
 
-                col1, col2 = st.columns([2, 1])
+                col1, col2 = st.columns(2)
 
                 with col1:
                     # ax.bar(x, y,  color="slateblue")
@@ -105,10 +105,10 @@ def main():
                             zaxis=dict(title='Count'),
                         )
                     )
-                    st.plotly_chart(fig)
+                    st.plotly_chart(fig, use_container_width=True)
 
                 with col2:
-                    st.dataframe(top_user_pct)
+                    st.dataframe(top_user_pct, use_container_width=True)
 
             st.divider()
             # -----------------------world cloud for most common words-----------------
